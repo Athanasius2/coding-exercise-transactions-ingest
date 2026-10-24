@@ -1,0 +1,18 @@
+<Solution>
+  <Folder Name="/01 - Client/">
+    <Project Path="transactiondigest.client/transactiondigest.client.esproj">
+      <Build />
+      <Deploy />
+    </Project>
+    <Project Path="TransactionDigest.Server/TransactionDigest.Server.csproj" />
+  </Folder>
+  <Folder Name="/02 - Application/">
+    <Project Path="TransactionDigest.Application/TransactionDigest.Application.csproj" />
+  </Folder>
+  <Folder Name="/03 - Data/">
+    <Project Path="TransactionDigest.Data/TransactionDigest.Data.csproj" />
+  </Folder>
+  <Folder Name="/04 - Domain/">
+    <Project Path="TransactionDigest.Domain/TransactionDigest.Domain.csproj" />
+  </Folder>
+</Solution>
