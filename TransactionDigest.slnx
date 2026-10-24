@@ -15,4 +15,7 @@
   <Folder Name="/04 - Domain/">
     <Project Path="TransactionDigest.Domain/TransactionDigest.Domain.csproj" />
   </Folder>
+  <Folder Name="/05 - Test/">
+    <Project Path="TransactionDigest.Test/TransactionDigest.Test.csproj" Id="9a5a35c7-75ab-468b-8305-9235ff4d8d1b" />
+  </Folder>
 </Solution>

@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore;
+using TransactionDigest.Data.Context;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -5,6 +8,13 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
+string connectionString = builder.Configuration.GetConnectionString("Default") 
+    ?? throw new Exception("Connection string not configured in appconfig.json");
+
+builder.Services.AddDbContext<TransactionContext>(options =>
+{
+    options.UseSqlite(connectionString);
+});
 
 var app = builder.Build();
 

@@ -14,14 +14,22 @@
     <PackageReference Include="Microsoft.AspNetCore.SpaProxy">
       <Version>10.*-*</Version>
     </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="10.0.13">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\TransactionDigest.Application\TransactionDigest.Application.csproj" />
-    <ProjectReference Include="..\..\TransactionDigest.Data\TransactionDigest.Data.csproj" />
+    <ProjectReference Include="..\TransactionDigest.Application\TransactionDigest.Application.csproj" />
     <ProjectReference Include="..\transactiondigest.client\transactiondigest.client.esproj">
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
+    <ProjectReference Include="..\TransactionDigest.Data\TransactionDigest.Data.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Database\" />
   </ItemGroup>
 
 </Project>
