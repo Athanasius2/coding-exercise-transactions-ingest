@@ -28,8 +28,4 @@
     <ProjectReference Include="..\TransactionDigest.Data\TransactionDigest.Data.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Database\" />
-  </ItemGroup>
-
 </Project>

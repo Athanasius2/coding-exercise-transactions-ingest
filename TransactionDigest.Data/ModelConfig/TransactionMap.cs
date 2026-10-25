@@ -15,7 +15,6 @@ namespace TransactionDigest.Data.ModelConfig
             builder.Property(e => e.LocationCode).HasMaxLength(20);
             builder.Property(e => e.ProductName).HasMaxLength(20);
             builder.Property(e => e.Amount).HasPrecision(18, 2);
-            builder.Property(e => e.TransactionTime).HasDefaultValueSql("CURRENT_TIMESTAMP");
             builder.Property(e => e.Status).HasDefaultValue(TransactionStatus.Pending);
         }
     }

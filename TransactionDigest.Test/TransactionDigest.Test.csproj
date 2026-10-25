@@ -8,7 +8,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Moq" Version="4.21.0" />
     <PackageReference Include="MSTest" Version="4.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TransactionDigest.Application\TransactionDigest.Application.csproj" />
+    <ProjectReference Include="..\TransactionDigest.Data\TransactionDigest.Data.csproj" />
+    <ProjectReference Include="..\TransactionDigest.Domain\TransactionDigest.Domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>

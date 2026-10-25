@@ -50,9 +50,7 @@ namespace TransactionDigest.Data.Migrations
                         .HasDefaultValue(0);
 
                     b.Property<DateTime>("TransactionTime")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("TEXT")
-                        .HasDefaultValueSql("CURRENT_TIMESTAMP");
+                        .HasColumnType("TEXT");
 
                     b.HasKey("SourceSystem", "TransactionId");
 
