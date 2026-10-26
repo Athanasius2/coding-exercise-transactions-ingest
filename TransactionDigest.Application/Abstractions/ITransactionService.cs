@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using TransactionDigest.Application.Dto;
+﻿using TransactionDigest.Application.Dto;
 
 namespace TransactionDigest.Application.Abstractions
 {

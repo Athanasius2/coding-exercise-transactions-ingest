@@ -1,0 +1,17 @@
+
+<span style="color:red">{{errorMessage()}}</span>
+<br />
+<span style="color:green">{{successMessage()}}</span>
+<br />
+<button (click)="import()">Import</button>
+<button (click)="delete()">Delete</button>
+
+<ag-grid-angular
+                 class="ag-theme-quartz"
+                 [domLayout]="'autoHeight'"
+                 [rowData]="transactions()"
+                 [columnDefs]="colDefs"
+                 [defaultColDef]="defaultColDef"
+                 [pagination]="true"
+                 [paginationPageSize]="10"
+                 (gridReady)="onGridReady($event)"/>

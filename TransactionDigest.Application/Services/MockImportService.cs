@@ -72,7 +72,118 @@ namespace TransactionDigest.Application.Services
                     ProductName = "USB-C Docking Station",
                     Amount = 129.95M,
                     TransactionTime = DateTime.Parse("2026-02-27T11:20:05Z")
-                }
+                },
+                new()
+                {
+                    SourceSystem = "Online",
+                    TransactionId = 100004,
+                    CardNumber = "***4444",
+                    LocationCode = "ONLINE",
+                    ProductName = "USB-C Docking Station",
+                    Amount = 129.95M,
+                    TransactionTime = DateTime.Parse("2026-02-27T11:20:05Z")
+                },
+                new()
+                {
+                    SourceSystem = "Online",
+                    TransactionId = 100005,
+                    CardNumber = "***4444",
+                    LocationCode = "ONLINE",
+                    ProductName = "USB-C Docking Station",
+                    Amount = 129.95M,
+                    TransactionTime = DateTime.Parse("2026-02-27T11:20:05Z")
+                },
+                new()
+                {
+                    SourceSystem = "Online",
+                    TransactionId = 100006,
+                    CardNumber = "***4444",
+                    LocationCode = "ONLINE",
+                    ProductName = "USB-C Docking Station",
+                    Amount = 129.95M,
+                    TransactionTime = DateTime.Parse("2026-02-27T11:20:05Z")
+                },
+                new()
+                {
+                    SourceSystem = "Online",
+                    TransactionId = 100007,
+                    CardNumber = "***4444",
+                    LocationCode = "ONLINE",
+                    ProductName = "USB-C Docking Station",
+                    Amount = 129.95M,
+                    TransactionTime = DateTime.Parse("2026-02-27T11:20:05Z")
+                },
+                new()
+                {
+                    SourceSystem = "Online",
+                    TransactionId = 100008,
+                    CardNumber = "***4444",
+                    LocationCode = "ONLINE",
+                    ProductName = "USB-C Docking Station",
+                    Amount = 129.95M,
+                    TransactionTime = DateTime.Parse("2026-02-27T11:20:05Z")
+                },
+                new()
+                {
+                    SourceSystem = "Online",
+                    TransactionId = 100010,
+                    CardNumber = "***4444",
+                    LocationCode = "ONLINE",
+                    ProductName = "USB-C Docking Station",
+                    Amount = 129.95M,
+                    TransactionTime = DateTime.Parse("2026-02-27T11:20:05Z")
+                },
+                new()
+                {
+                    SourceSystem = "Online",
+                    TransactionId = 100012,
+                    CardNumber = "***4444",
+                    LocationCode = "ONLINE",
+                    ProductName = "USB-C Docking Station",
+                    Amount = 129.95M,
+                    TransactionTime = DateTime.Parse("2026-02-27T11:20:05Z")
+                },
+                new()
+                {
+                    SourceSystem = "Online",
+                    TransactionId = 100013,
+                    CardNumber = "***4444",
+                    LocationCode = "ONLINE",
+                    ProductName = "USB-C Docking Station",
+                    Amount = 129.95M,
+                    TransactionTime = DateTime.Parse("2026-02-27T11:20:05Z")
+                },
+                new()
+                {
+                    SourceSystem = "Online",
+                    TransactionId = 100014,
+                    CardNumber = "***4444",
+                    LocationCode = "ONLINE",
+                    ProductName = "USB-C Docking Station",
+                    Amount = 129.95M,
+                    TransactionTime = DateTime.Parse("2026-02-27T11:20:05Z")
+                },
+                new()
+                {
+                    SourceSystem = "Online",
+                    TransactionId = 100015,
+                    CardNumber = "***4444",
+                    LocationCode = "ONLINE",
+                    ProductName = "USB-C Docking Station",
+                    Amount = 129.95M,
+                    TransactionTime = DateTime.Parse("2026-02-27T11:20:05Z")
+                },
+                new()
+                {
+                    SourceSystem = "Online",
+                    TransactionId = 100016,
+                    CardNumber = "***4444",
+                    LocationCode = "ONLINE",
+                    ProductName = "USB-C Docking Station",
+                    Amount = 129.95M,
+                    TransactionTime = DateTime.Parse("2026-02-27T11:20:05Z")
+                },
+
             ]
         ];
 

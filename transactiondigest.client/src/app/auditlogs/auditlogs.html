@@ -1,0 +1,11 @@
+<span style="color:red">{{errorMessage()}}</span>
+<br />
+<ag-grid-angular
+                 class="ag-theme-quartz"
+                 [domLayout]="'autoHeight'"
+                 [rowData]="logs()"
+                 [columnDefs]="colDefs"
+                 [defaultColDef]="defaultColDef"
+                 [pagination]="true"
+                 [paginationPageSize]="10"
+                 (gridReady)="onGridReady($event)"/>
