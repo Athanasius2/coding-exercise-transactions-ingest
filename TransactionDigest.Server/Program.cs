@@ -27,14 +27,15 @@ if (builder.Environment.IsDevelopment())
     fakeTime.AdjustTime(DateTime.Parse("2026-02-27T12:00:05Z"));
     builder.Services.AddSingleton((TimeProvider)fakeTime);
     builder.Services.AddSingleton(fakeTime);
+    builder.Services.AddScoped<IImportService, MockImportService>();
 }
 else
 {
     builder.Services.AddSingleton(TimeProvider.System);
+    builder.Services.AddScoped<IImportService, ImportService>();
 }
 builder.Services.AddScoped<IRepository, Repository>();
 builder.Services.AddScoped<ITransactionService, TransactionService>();
-builder.Services.AddScoped<IImportService, MockImportService>();
 builder.Services.AddAutoMapper(options => options.AddProfile(new AutoMapperProfile()));
 
 var app = builder.Build();

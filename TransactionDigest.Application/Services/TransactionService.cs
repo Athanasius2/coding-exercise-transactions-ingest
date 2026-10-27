@@ -128,7 +128,7 @@ namespace TransactionDigest.Application.Services
         {
             if (t2.SourceSystem != t1.SourceSystem || t2.TransactionId != t1.TransactionId)
             {
-                throw new InvalidOperationException(
+                throw new ArgumentException(
                     $"Cannot update transaction ({t1.SourceSystem} - {t1.TransactionId}) with data from transaction ({t2.SourceSystem} - {t2.TransactionId})");
             }
 
