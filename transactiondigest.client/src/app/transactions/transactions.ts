@@ -1,6 +1,6 @@
 import { HttpClient } from "@angular/common/http";
 import { Component, OnInit, signal } from "@angular/core";
-import {ColDef, GridReadyEvent} from "ag-grid-community";
+import {ColDef, GridReadyEvent, ValueFormatterFunc, ValueFormatterParams } from "ag-grid-community";
 import { OperationResult, Transaction} from '../../objects';
 
 
@@ -28,6 +28,20 @@ export class Transactions implements OnInit {
     {field: "productName"},
     {field: "amount"},
     {field: "transactionTime"},
+    {field: "status", valueFormatter: (params: ValueFormatterParams) =>
+      {
+        switch (params.value){
+          case 0:
+            return "Pending"
+          case 1:
+            return "Revoked";
+          case 2:
+            return "Finalized";
+          default:
+            return "";
+        }
+      }
+    }
   ]
 
   constructor(private http: HttpClient) {}
